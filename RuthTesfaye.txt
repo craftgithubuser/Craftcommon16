@@ -7,3 +7,7 @@ updating.
 oct 19/22
 
 
+git disktop practic
+
+
+creat git branch
