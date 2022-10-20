@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author mikia
+ *
+ */
+module javaMike {
+}
