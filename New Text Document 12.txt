@@ -1,3 +1,7 @@
 from khedira
 new plan 2023
+<<<<<<< HEAD
 what next hoop good /inshallah
+=======
+be happy
+>>>>>>> main
