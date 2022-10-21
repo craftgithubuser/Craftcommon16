@@ -10,3 +10,4 @@ ephi
 hi there
 hello africa
 hello fridays
+hello friday night
