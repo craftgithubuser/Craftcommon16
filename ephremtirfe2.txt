@@ -9,3 +9,4 @@ ephi man
 ephi
 hi there
 hello africa
+hello fridays
