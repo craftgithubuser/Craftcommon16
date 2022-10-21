@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 Hello Earth people! Edited text.
-=======
 Branch assignment.
->>>>>>> c49205aee41f9c4697922ebae8ca3800cb3e9fad
