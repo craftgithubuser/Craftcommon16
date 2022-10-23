@@ -1,2 +1,5 @@
 hello world;
-Hello 
+Hello africa
+hello ethiopia
+hello american
+hello europe

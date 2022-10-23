@@ -1,0 +1,2 @@
+
+Yeah. We aready closed branching in git and switched to database
