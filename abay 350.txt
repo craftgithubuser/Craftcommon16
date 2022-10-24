@@ -1,5 +1,12 @@
 soresa is our teacher
 yes he is
 
+<<<<<<< HEAD
 hello, oh okay
 yemisrach change
+=======
+
+hello, oh okay
+
+nice
+>>>>>>> 079b312 (i edit document)
