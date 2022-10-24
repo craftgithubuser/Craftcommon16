@@ -8,5 +8,9 @@ yemisrach change
 
 hello, oh okay
 
+<<<<<<< HEAD
 nice
 >>>>>>> 079b312 (i edit document)
+=======
+nice
+>>>>>>> 9976dce71043723870ba14c68ac5dd2f256cfb58
