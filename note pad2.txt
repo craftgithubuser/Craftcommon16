@@ -1,0 +1,15 @@
+ droping your database / deleting your database
+                  drop database studentinfo;
+                  drop schema studentinfo;
+                  
+                  -- deleting your table
+                  drop table tablename;
+                  drop table student;
+                  
+                  -- deleting column
+                  alter table student
+                  drop column dob;
+                  
+                  -- deleting constraints
+                  alter table student
+                  drop primary key;

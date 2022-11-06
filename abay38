@@ -1,1 +1,10 @@
-
+-- full outer join
+-- how we achieve full outer join in mysql?
+-- ans: left outer join union right outer join give us full outer join
+select cust.id, concat(cust.first_name, ' ', cust.last_name) as FullName, O.item, O.amount
+from customers as cust left outer join orders as O
+on cust.id = O.customer_id
+union
+select cust.id, concat(cust.first_name, ' ', cust.last_name) as FullName, O.item, O.amount
+from customers as cust right outer join orders as O
+on cust.id = O.customer_id;

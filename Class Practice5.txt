@@ -1,0 +1,1 @@
+index.lock is an important part of .git directory.

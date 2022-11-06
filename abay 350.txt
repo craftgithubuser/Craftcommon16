@@ -1,1 +1,44 @@
 soresa is our teacher
+yes he is
+
+<<<<<<< HEAD
+hello, oh okay
+yemisrach change
+=======
+
+hello, oh okay
+
+nice
+>>>>>>> 079b312 (i edit document)
+
+>>>>> Hi Henock making an edit here
+
+
+here is the last update file 
+
+o list the branch:
+------------------
+git branch 
+ex: git branch 
+
+
+To create a git branch:
+-----------------------
+
+git branch <branch_name>
+
+ex: git branch develop_branch
+
+ex: git checkout -b develope_branch
+
+
+To switch to the git branch:
+----------------------------
+git checkout <branch_name>
+
+ex: git checkout develope_branch
+
+
+ex: git checkout feature_branch
+
+ex: git checkout main
