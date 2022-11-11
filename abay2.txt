@@ -1,0 +1,111 @@
+create database join_database;
+
+-- drop database join_database;
+
+use join_database;
+
+create table Customers(
+          id int, 
+          first_name varchar(50), 
+          last_name varchar(50),
+          age int,
+          country varchar(50),
+          constraint CustomersPK primary key(id));
+
+create table Orders(
+          order_id int, 
+          item varchar(50), 
+          amount int,
+          customer_id int, 
+          foreign key (customer_id) references Customers(id),
+          constraint OrdersPK primary key(order_id));
+          
+create table Shippings(
+          shipping_id int, 
+          status varchar(50),
+          customer int, 
+          foreign key(customer) references Customers(id),
+          constraint ShippingsPK primary key(shipping_id));
+          
+insert into Customers values(1, 'John', 'Doe', 31, 'USA');
+insert into Customers values(2, 'Robert', 'Luna', 22, 'USA');
+insert into Customers values(3, 'David', 'Robinson', 22, 'UK');
+insert into Customers values(4, 'John', 'Reinhardt', 25, 'UK');
+insert into Customers values(5, 'Betty', 'Doe', 28, 'UAE');
+insert into Customers values(6, 'Abebe', 'Doe', 29, 'Sudan');
+
+insert into Orders values(1, 'paper', 500, 5);
+insert into Orders values(2, 'pen', 10, 2);
+insert into Orders values(3, 'marker', 120, 3);
+insert into Orders values(4, 'books', 1000, 1);
+insert into Orders values(5, 'eraser', 20, 4);
+insert into Orders values(6, 'keyboard', 20, 4);
+
+insert into Shippings values(1, 'pending', 2);
+insert into Shippings values(2, 'pending', 4);
+insert into Shippings values(3, 'delivered', 3);
+insert into Shippings values(4, 'pending', 5);
+insert into Shippings values(5, 'delivered', 1);
+
+-- inner join
+
+select customers.id, customers.first_name, customers.last_name, orders.item, orders.amount
+from customers inner join orders
+on customers.id = orders.customer_id;
+          
+select customers.id, concat(customers.first_name, ' ', customers.last_name) as Full name, orders.item, orders.amount
+from customers inner join orders
+on customers.id = orders.customer_id;
+
+
+select customers.id, concat(customers.first_name, ' ', customers.last_name) as Full name, orders.item, orders.amount
+from customers inner join orders
+on customers.id = orders.customer_id
+where orders.amount >300;
+
+select customers.id, concat(customers.first_name, ' ', customers.last_name) as Full name
+from customers inner join orders
+on customers.id = orders.customer_id
+group by Full name;
+
+
+select c.id, concat(c.first_name, ' ', c.last_name) as Full name
+from customers as c inner join orders as o
+on c.id = o.customer_id
+group by Full name;
+
+select cust.id, concat(cust.first_name, ' ', cust.last_name) as Full name
+from customers as cust inner join orders as o
+on cust.id = o.customer_id
+where orders.item = 'paper';
+
+
+
+SELECT C.id, C.first_name, O.amount, S.status
+FROM Customers AS C
+INNER JOIN Orders AS O ON O.customer_id = C.id
+INNER JOIN Shippings AS S ON C.id = S.customer;
+-- join types
+-- ----------
+-- inner join
+-- outer join
+   -- left outer join
+   -- right outer join
+   -- full outer join / is not allowed in mysql
+
+-- left outer join
+select cust.id, concat(cust.first_name, ' ', cust.last_name) as FullName, O.item, O.amount
+from customers as cust left outer join orders as O
+on cust.id = O.customer_id;
+
+
+-- right outer join
+select cust.id, concat(cust.first_name, ' ', cust.last_name) as FullName, O.item, O.amount
+from orders as O right outer join customers as cust
+on cust.id = O.customer_id;
+
+
+-- right outer join
+select cust.id, concat(cust.first_name, ' ', cust.last_name) as FullName, O.item, O.amount
+from customers as cust right outer join orders as O
+on cust.id = O.customer_id;
