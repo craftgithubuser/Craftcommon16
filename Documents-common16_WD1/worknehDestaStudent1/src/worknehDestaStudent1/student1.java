@@ -1,7 +1,6 @@
 package worknehDestaStudent1;
 
 
-
 import java.util.Scanner;
 
 public class student1 {
