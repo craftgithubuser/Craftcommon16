@@ -26,6 +26,6 @@ public class Teachersinfo2 {
 		System.out.println("age" + age);
 		System.out.println("salary" + salary);
 		System.out.println("total salary:" + totalSalary);
-		
+		System.out.println("bonus" + bonus);
 	}}
 	
