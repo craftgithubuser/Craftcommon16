@@ -23,7 +23,8 @@ public class StudentInfo {
 
 		    double total_salary = salary + bonus;
 
-		    System.out.println("the name of the student: " + name);
+		    System.out.println("the name of the student"
+		    		+ ": " + name);
 		    System.out.println("the salary of the student is : " + salary);
 		    System.out.println("the bonus of the student is : " + bonus);
 		    System.out.println("The total salary of the student is : " + total_salary);
