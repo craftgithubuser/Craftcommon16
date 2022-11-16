@@ -7,6 +7,7 @@ public class StudentInfo {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		
+		System.out.println();
 		
 		 System.out.println("pls enter your full name:");
 		 String StudentInfoName = input.next();
