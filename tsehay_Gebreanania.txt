@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class StudenInfo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner in = new Scanner(System .in );
+		
+		System.out.println("pls enter your name");
+		String name = in.nextLine();
+		
+		System.out.println("pls enter your last name");
+		String lastname = in.nextLine();
+		
+		System.out.println("pls enter your age");
+		int age = in.nextInt();
+		
+		System.out.println("pls enter your salary");
+		 float salary = in.nextFloat();
+		
+		System.out.println("pls eneter your bounce");
+		double bounce = in.nextDouble();
+		
+		double Total_salary = salary + bounce ;
+		
+		System .out.println("Student first name:" + name + " " +lastname);
+		System.out.println("Student age: "+age);
+		System.out.println("Student salary:"+ salary);
+		System.out.println("Student bounce:"+ bounce);
+		System.out.println("Student total salary:"+ Total_salary);
+		
+		
+		
+	}
+
+}
