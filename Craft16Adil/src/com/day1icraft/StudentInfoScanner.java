@@ -47,6 +47,11 @@ public class StudentInfoScanner {
 		            System.out.println("the bonus of the employee is : " + bonus);
 		    
 		            System.out.println("The total salary of the employee is : " + totalsalary);
+		            
+		            
+		            
+		            
+		            // seond attemt
 		 
 		 
 		 
