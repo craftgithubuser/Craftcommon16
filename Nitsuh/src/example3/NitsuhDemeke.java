@@ -24,7 +24,7 @@ public class NitsuhDemeke {
 	    System.out.println("the salary of the employee is : " + salary);
 	    System.out.println("the bonus of the employee is : " + bonus);
 	    System.out.println("The total salary of the employee is : " + total_salary);
-	    
+	   
 	}
 
 }
