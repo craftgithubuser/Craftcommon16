@@ -15,11 +15,12 @@ public class StudentInfo3 {
 			System.out.println("pls enter your full name: ");
 			String firstName = g.next();
 			
-			System.out.println("pls enter your age:");
+			System.out.println("pls enter your age: ");
 			int studAge = g.nextInt();
 			
 			System.out.println("pls enter your salary:");
 			double studSalary = g.nextDouble();
+
 			
 			System.out.println(" pls enter your bonus:");
 			double studBonus = g.nextDouble();
