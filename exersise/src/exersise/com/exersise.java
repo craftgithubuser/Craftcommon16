@@ -7,7 +7,7 @@ public class exersise {
 		
 		 String name = "James Bond";
 
-		    int salary = 2000;
+		    int salary = 3000;
 
 		    double bonus = 200;
 
