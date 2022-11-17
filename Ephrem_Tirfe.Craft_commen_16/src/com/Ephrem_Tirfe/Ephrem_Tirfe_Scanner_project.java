@@ -32,7 +32,7 @@ public class Ephrem_Tirfe_Scanner_project {
 		System.out.println("The Age Of The Student Is: " + age);
 		System.out.println("The Slalary Of The Student Is: " + salary);
 		System.out.println("The Bonus Of The Student Is: " + bonus);
-		System.out.println("The Total Salary Of The Student Is: " + totalSalary);
+		System.out.println("The Total Salary Of A Student Is: " + totalSalary);
 	}
 
 }
