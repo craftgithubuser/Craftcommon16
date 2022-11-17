@@ -23,6 +23,7 @@ public class Anibal_Tegegne_Java {
 		System.out.println("pls print your salary: " + studentSalary);
 		System.out.println("pls print your bonus: " + studentBonus);
 		System.out.println("pls print your total salary: " + studentTotalSalary);
+		
 		System.out.println("pls print your total salary: " + studentTotalSalary);
 
 	}
