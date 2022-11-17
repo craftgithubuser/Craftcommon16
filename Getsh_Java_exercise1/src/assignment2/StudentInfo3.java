@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class StudentInfo3 {
 
 	public static void main(String[] args) {
-		// just another
+		// assignment
 
 		  Scanner g = new Scanner(System.in);
 			
