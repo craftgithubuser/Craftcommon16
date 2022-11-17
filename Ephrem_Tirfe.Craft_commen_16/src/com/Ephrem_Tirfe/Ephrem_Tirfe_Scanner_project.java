@@ -30,7 +30,7 @@ public class Ephrem_Tirfe_Scanner_project {
 		System.out.println("The Full Name Of The Student Is: " + firstname + " " + lastname);
 		System.out.println("The Sex Of The Student Is: " + Sex);
 		System.out.println("The Age Of The Student Is: " + age);
-		System.out.println("The Slalary Of The Student Is: " + salary);
+		System.out.println("The Slalary Of A Student Is: " + salary);
 		System.out.println("The Bonus Of The Student Is: " + bonus);
 		System.out.println("The Total Salary Of A Student Is: " + totalSalary);
 	}
