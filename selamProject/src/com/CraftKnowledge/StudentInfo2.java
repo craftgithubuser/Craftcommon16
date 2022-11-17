@@ -31,6 +31,7 @@ public class StudentInfo2 {
 		System.out.println("Student Salary: " + studSalary);
 		System.out.println("Student Bonus: " + studBonus);
 		System.out.println("Student Total Salary " + totalSalary);
+		
 
 		
 		
