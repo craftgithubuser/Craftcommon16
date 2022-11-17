@@ -25,7 +25,7 @@ public class StudentInfo {
 		        
 		        
 		        double total_salary = salary + bonus;
-		         double total_salary = salary + bonus;
+		        
 		
 		System.out.println("student Full Name: " + fulltname);
 		System.out.println("Student Ae:" + age);
