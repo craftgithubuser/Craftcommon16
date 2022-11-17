@@ -10,9 +10,9 @@ public class StudentInfo3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		 Scanner g = new Scanner(System.in);
+		  Scanner g = new Scanner(System.in);
 			
-			System.out.println("pls enter your full name:");
+			System.out.println("pls enter your full name: ");
 			String firstName = g.next();
 			
 			System.out.println("pls enter your age:");
