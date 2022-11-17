@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class StudentInfo3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// just group
 
 		  Scanner g = new Scanner(System.in);
 			
@@ -32,6 +32,7 @@ public class StudentInfo3 {
 			System.out.println("student salary:" + studSalary);
 			System.out.println("student bonus:" + studBonus);
 			System.out.println("total studen salary:" + totalStudsalary);	
+			
 		
 		
 		
