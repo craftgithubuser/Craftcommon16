@@ -2,7 +2,7 @@ package studentInfo;
 
 import java.util.Scanner;
 
-public class Lelisie {
+public class lelisie {
        
 	public static void main(String[] args){
 	
@@ -17,11 +17,11 @@ public class Lelisie {
 	    System.out.println("Pls enter your bonus: ");
 	    double bonus = in.nextDouble();
 
-	    double total_salary = salary + bonus;
+	    double totalsalary = salary + bonus;
 
 	    System.out.println("the name of the student is : " + name);
 	    System.out.println("the salary of the student is : " + salary);
 	    System.out.println("the bonus of the student is : " + bonus);
-	    System.out.println("The total salary of the student is : " + total_salary);
+	    System.out.println("The total salary of the student is : " + totalsalary);
 	  }
 	}
