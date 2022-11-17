@@ -17,13 +17,13 @@ public class InputClass {
 		System.out.println("Please enter your last name:");
 		String lastName = in.nextLine();
 		
-		System.out.println("Please enter your age:");
+		System.out.println("Please enter your age: ");
 		int age = in.nextInt();
 		
-		System.out.println("Please enter your salary:");
+		System.out.println("Please enter your salary: ");
 		double salary = in.nextDouble();
 		
-		System.out.println("Please enter your bonus:");
+		System.out.println("Please enter your bonus: ");
 		double bonus = in.nextDouble();
 		
 		double totalSalary = salary+bonus;
