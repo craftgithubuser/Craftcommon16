@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author gosel
+ *
+ */
+module HelloWorld {
+}
