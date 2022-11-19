@@ -7,7 +7,7 @@ public class PracticeExercise {
 		
 		String firstName= "Ruth";
 		String LastName= "Teklu";	
-		int age=39;
+		int age=42;
 		String city="chesapeake";
 		
 		System.out.println("Employee first name"+firstName);
