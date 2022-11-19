@@ -31,7 +31,7 @@ System.out.println("ID:" +numId);
 public static void main(String args[]) {
 Student StuOne = new Student("Lwam");
 Student StuTwo = new Student("Jacob");
-Student StuThree = new Student("Phoebe");
+Student StuThree = new Student("Paul");
  
 StuOne.setMarks(98);
 StuTwo.setMarks(89);
