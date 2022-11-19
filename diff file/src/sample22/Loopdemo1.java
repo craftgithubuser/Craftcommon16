@@ -5,7 +5,7 @@ public class Loopdemo1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//declare variable
-		int a =35,b=15;
+		int a =35,b=25;
 		
 		//addition operation
 		System.out.println("a + b = " + (a + b));
