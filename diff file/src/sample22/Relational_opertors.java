@@ -6,7 +6,7 @@ public class Relational_opertors {
 		// TODO Auto-generated method stub
 		
 		//create variable
-		int d =24,r=10;
+		int d =24,r=20;
 		
 		//value of a and b
 		System.out.println("d is" + d + "r is" + r);
