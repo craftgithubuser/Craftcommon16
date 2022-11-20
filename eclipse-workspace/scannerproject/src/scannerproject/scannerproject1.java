@@ -37,12 +37,11 @@ public class scannerproject1 {
 
 
 
-				
-
+		
 			
 				}
 
 
 	}
 
-}
+
