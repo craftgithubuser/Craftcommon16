@@ -2,17 +2,17 @@ package typesofVarables;
 
 public class StaticVarable {
 	
+	public static double salary;
+	public static String dept="Finance";
+	
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	
-	String studentName="Elda";
-	int studentID=0256;
-	String studentDep="RN";
+	StaticVarable.salary=1000;
+	System.out.println("Dept:"+StaticVarable.dept);
+	System.out.println("salary:"+StaticVarable.salary);
 	
-	System.out.println("student Name"+studentName);
-	System.out.println("student ID"+studentID);
-	System.out.println("student Department"+studentDep);
-
 }
 }
