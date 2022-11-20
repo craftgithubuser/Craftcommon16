@@ -1,17 +1,20 @@
 package typesofVarables;
 
 public class LocalVarable {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		String studentName="Hannna";
-		int studentID=0237;
-		String studentDep="IT";
-		
-		System.out.println("student Name"+studentName);
-		System.out.println("student ID"+studentID);
-		System.out.println("student Department"+studentDep);
+	
+	public void methodOne() {
+		int J=70;
+		System.out.println("Value of J"+J);
 	}
-
+public void methodtwo( ) {
+	int K=90;
+			System.out.println("Value of K"+K);
+}
+   public static void main(String[] argus) {
+	   
+	   LocalVarable m1= new LocalVarable();
+	   m1.methodOne();
+	   m1.methodtwo();
+	   
+   }
 }
