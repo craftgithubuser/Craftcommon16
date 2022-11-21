@@ -1,7 +1,7 @@
 package com.day1pack;
 
 public class LocalVariablePractice {
-
+	
 	public static void main(String[] args) {
 		// local variable practices
 
@@ -25,6 +25,7 @@ public class LocalVariablePractice {
 		
 		int k = 30; // local variable method2
 		System.out.println("value of k:" + k);
+	
 		
 			
 	}
