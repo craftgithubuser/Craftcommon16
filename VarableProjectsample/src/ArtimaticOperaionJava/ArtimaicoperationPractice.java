@@ -7,7 +7,7 @@ public class ArtimaicoperationPractice {
 		
 		int a,b,c;
 		a=12;
-		b=2;
+		b=3;
 		c=a+b;
 		System.out.println("addition:"+c);
 		c=a-b;
