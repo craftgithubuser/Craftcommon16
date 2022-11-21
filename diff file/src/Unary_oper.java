@@ -5,10 +5,10 @@ public class Unary_oper {
 		// TODO Auto-generated method stub
 		
 		int b =10;
-		System.out.println(b++);
-		System.out.println(++b);
-		System.out.println(b--);
-		System.out.println(--b);
+		System.out.println(b++);//10,a=11
+		System.out.println(++b);//12,b=12
+		System.out.println(b--);//12 ,b=11
+		System.out.println(--b);//10
 
 	}
 
