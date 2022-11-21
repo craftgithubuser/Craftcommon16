@@ -34,7 +34,8 @@ public class scannerproject1 {
 		System.out.println("Pls enter your total salary");
 
 		double studentTotalSalary=hilina.nextDouble();
-
+		
+      
 
 
 
