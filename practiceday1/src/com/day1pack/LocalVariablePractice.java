@@ -3,7 +3,7 @@ package com.day1pack;
 public class LocalVariablePractice {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// local variable practice
 
 		LocalVariablePractice g1 = new LocalVariablePractice(); // creating an object
 		
