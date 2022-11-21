@@ -23,6 +23,8 @@ public class ArtimaicoperationPractice {
 		System.out.println("increament:"+a);
 		a=--a;
 		System.out.println("decreament:"+a);
+		a=a--;
+		System.out.println("decreament:"+a);
 		
 		
 				
