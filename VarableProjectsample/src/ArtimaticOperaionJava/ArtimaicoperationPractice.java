@@ -16,7 +16,7 @@ public class ArtimaicoperationPractice {
 		System.out.println("division:"+c);
 		c=a/b;
 		System.out.println("division:"+c);
-		a=16;
+		a=17;
 		c=a%b;
 		System.out.println("Remainders:"+c);
 		a=++a;
