@@ -3,7 +3,7 @@ package com.day1pack;
 public class LocalVariablePractice {
 
 	public static void main(String[] args) {
-		// local variable practice
+		// local variable practices
 
 		LocalVariablePractice g1 = new LocalVariablePractice(); // creating an object
 		
