@@ -14,7 +14,7 @@ public class BreakClass {
 		
 		for(int i=0; i<=10; i++) {
 			
-			System.out.println("enter number");
+			System.out.println("please enter number");
 			
 			num = in.nextDouble();
 			
