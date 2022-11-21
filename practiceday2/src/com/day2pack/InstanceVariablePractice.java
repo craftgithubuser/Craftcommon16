@@ -5,7 +5,7 @@ public class InstanceVariablePractice {
 	int age = 25; // instance variable at the class level
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// instance variable
 
 		
 		InstanceVariablePractice g2 = new InstanceVariablePractice();
