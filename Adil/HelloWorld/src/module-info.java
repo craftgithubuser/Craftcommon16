@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author yemis
+ *
+ */
+module HelloWorld {
+}
