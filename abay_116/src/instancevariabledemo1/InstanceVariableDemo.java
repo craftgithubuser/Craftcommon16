@@ -1,4 +1,4 @@
-package abay_116;
+package instancevariabledemo1;
 
 public class InstanceVariableDemo {
 	int age = 25; // <----InstanceVariablea Declared outside methods
@@ -22,6 +22,3 @@ public class InstanceVariableDemo {
 		var.methodtwo();
 	}
 }
-	
-
-
