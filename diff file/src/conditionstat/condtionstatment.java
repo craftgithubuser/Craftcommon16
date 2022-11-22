@@ -11,15 +11,15 @@ public class condtionstatment {
 		System.out.println("enter your markr");
 		double mark =in.nextDouble();
 		
-		if(mark <75) {
+		if(mark >=75) {
 			System.out.println("first divsion");
 			
 		}
 		else {
-			System.out.println("first divsion:");}
+	      System.out.print("second divison");
 		
-		
-		
+		}	
+		 System.out.print("outside of if statement");
 	}
 
 }
