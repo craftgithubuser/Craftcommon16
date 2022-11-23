@@ -5,21 +5,20 @@ public class ArrayAverage {
 	public static void main(String[] args) {
 		
 		
-		int[][] mark = { { 70, 77, 89, 78, 62, 88 }, 
+		double[][] mark = { { 70, 77, 89, 78, 62, 88 }, 
 					     { 80, 60, 99, 68, 69, 98 }, 
 					     { 90, 87, 69, 88, 89, 58 },
 					     { 75, 84, 99, 78, 69, 98 } };
 
-		int sum = 0;
+		double sum = 0;
 		double average = 0.0;
-		int j;
-		int i;
+		
 
-		for (i = 0; i <= mark.length - 1; i++) {
+		for (int i = 0; i < mark.length; i++) {
 
 			System.out.print("student" + i + " ");
 
-			for (j = 0; j <= mark.length - 1; j++) {
+			for (int j = 0; j < mark.length; j++) {
 
 				System.out.print(mark[i][j] + " ");
 
