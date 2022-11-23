@@ -14,14 +14,14 @@ public class SumAverage {
 		System.out.println();
 	}
 		
-		for (int i = 0; i < studMark.length; i++) {
-			for (int j = 0; j < studMark[i].length; j++) {
-				System.out.print(studMark[i][j] + " ");
+//		for (int i = 0; i < studMark.length; i++) {
+//			for (int j = 0; j < studMark[i].length; j++) {
+//				System.out.print(studMark[i][j] + " ");
 
-			}
-			System.out.println();
+		//	}
+		//	System.out.println();
 
-		}
+		//}
 
 		for (int i = 0; i < studMark.length; i++) {
 			double Sum = 0;
