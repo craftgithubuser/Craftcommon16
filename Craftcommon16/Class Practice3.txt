@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+This is the third class prcatice text documnet.
+=======
+Troubleshooting computer issues is more than taking a regular class.
+>>>>>>> ae944757855f6e6c57d1754099857248bfb39531
