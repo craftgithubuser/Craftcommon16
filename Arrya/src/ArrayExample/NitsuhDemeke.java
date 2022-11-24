@@ -12,16 +12,26 @@ public class NitsuhDemeke {
                 
                 };
 		for (int i = 0; i < studsMark.length; i++) {
-			double avg=0;
+			double avg =0;
 			int sum =0;
+		
+			
+
 
 			for (int j = 0; j < studsMark[i].length; j++) {
 				System.out.print(studsMark[i][j] + " ");
 				sum +=studsMark[i][j];
-				avg=sum/studsMark[i].length;
+				avg =sum/studsMark[i].length;
+				
+				
 			}
-			System.out.println();
-			System.out.println(avg);
+			System.out.println("sum =" + sum);
+			System.out.println("Average =" + avg);
+			
+			
+		
+			
+			
 	}
 	}
 }
