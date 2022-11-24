@@ -1,0 +1,2 @@
+Second file inside a folder
+yes it is
