@@ -18,12 +18,12 @@ public class ArrayAverage {
 
 			System.out.print("student" + i + " ");
 
-			for (int j = 0; j < mark.length; j++) {
+			for (int j = 0; j < mark[i].length; j++) {
 
 				System.out.print(mark[i][j] + " ");
 
 				sum += mark[i][j];
-				average = sum / mark.length;
+				average = sum / mark[i].length;
 
 			}
 

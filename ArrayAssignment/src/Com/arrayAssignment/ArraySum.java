@@ -16,9 +16,9 @@ public class ArraySum {
 
 		for (int i = 0; i < mark.length; i++) {
 
-			System.out.print("student" + i + " ");
+			System.out.print("student: " + i + " ");
 
-			for (int j = 0; j <= mark.length; j++) {
+			for (int j = 0; j < mark[i].length; j++) {
 
 				System.out.print(mark[i][j] + " ");
 
