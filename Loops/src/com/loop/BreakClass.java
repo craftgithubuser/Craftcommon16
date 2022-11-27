@@ -7,7 +7,7 @@ public class BreakClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Scanner in= new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 		
 		double sum=0;
 		double num=0;
