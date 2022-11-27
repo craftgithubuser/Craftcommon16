@@ -36,16 +36,16 @@ public class MiniElement {
 // this method finds minimum integer number from the array
 	public static int findMini(int[] mini) {
 
-		int min = mini[0];
+		int minNum = mini[0];
 
 		for (int i = 1; i < mini.length; i++) {
 
-			if (mini[i] < min) {
+			if (mini[i] < minNum) {
 
-				min = mini[i];
+				minNum = mini[i];
 			}
 		}
-		return min;
+		return minNum;
 
 	}
 
