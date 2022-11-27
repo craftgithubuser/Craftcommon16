@@ -25,7 +25,7 @@ public class ArryAssigment {
 				System.out.print(studsMark[i][j] + " ");
 				
 				sum +=studsMark[i].length;
-				System.out.print(studsMark[i][j]);
+				System.out.print( studsMark[i][j]);
 		
              {
                 System.out.println();
