@@ -35,14 +35,14 @@ public class ArraySort {
 		System.out.println("Sorted numbers");
 
 		for (int i = 0; i < arr.length; i++) {
-			
+
 			System.out.println(arr[i]);
 		}
 	}
 
 	public static int[] sortIntiger(int[] arrayNum) {
 		System.out.println("Your numbers");
-		
+
 		for (int i = 0; i < arrayNum.length; i++) {
 			System.out.println(arrayNum[i]);
 
