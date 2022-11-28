@@ -1,0 +1,16 @@
+hello world;
+<<<<<<< HEAD
+Hello 
+
+the world is doing great brother.
+
+
+now i got it 
+=======
+Hello africa
+hello ethiopia
+hello american
+hello europe
+>>>>>>> e5c3253318b1a48c40f2829977309f862128e966
+good job 
+thank you
