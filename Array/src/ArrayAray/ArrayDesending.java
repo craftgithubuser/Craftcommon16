@@ -4,7 +4,7 @@ public class ArrayDesending {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int age[]={62,25,32,82,22,52,73,100,102};
+		int age[]={62,25,32,10,82,22,52,73,100,102};
 		
 		int temp;
 		for(int i=0;i<age.length;i++) {
