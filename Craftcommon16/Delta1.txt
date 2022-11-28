@@ -1,0 +1,12 @@
+What Can This Data Be Useful For?
+Feeding Dashboards
+
+	Manipulating in Power Query
+
+	Feeding into Power BI
+
+	Practicing Excel Formulas (VLOOKUP Practice Data)
+	
+	Testing Spreadsheet Solutions
+
+	Example Data for Articles or Videos You Are Making

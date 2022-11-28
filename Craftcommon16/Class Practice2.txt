@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+I see troubleshooting in computer science is more than taking the regular class.
+=======
+I am just using the desktop github
+>>>>>>> ae944757855f6e6c57d1754099857248bfb39531
