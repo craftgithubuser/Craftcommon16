@@ -14,6 +14,7 @@ public class ArraysReverseChallenge {
 		System.out.println(" Print array ");
 		printArray(sortedArray);
 	}
+	
 
 	public static int[] getIntegers(int number) {
 		Scanner s = new Scanner(System.in);
@@ -24,15 +25,18 @@ public class ArraysReverseChallenge {
 			values[i] = s.nextInt();
 		}
 
+		s.close();
 		return values;
 	}
+	
 
 	public static void printArray(int[] array) {
 		for (int i = 0; i < array.length; i++) {
-			System.out.println("Value of element of index" + i + " " + array[i]);
+			System.out.println("element of the array" + i + " " + array[i]);
 		}
 	}
 
+	
 	public static int[] sortIntegers(int[] array) {
 		int[] sortedArray = new int[array.length];
 		for (int i = 0; i < array.length; i++) {
@@ -41,7 +45,7 @@ public class ArraysReverseChallenge {
 
 		int temp;
 		boolean sorted = false;
-		while (sorted ) {
+		while (sorted == false) {
 			sorted = true;
 			for (int i = 0; i < sortedArray.length - 1; i++) {
 				if (sortedArray[i] < sortedArray[i + 1]) {
