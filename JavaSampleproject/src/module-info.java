@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author yemis
- *
- */
-module JavaSampleproject {
-}

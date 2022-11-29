@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author ephre
- *
- */
-module Loop {
-}
