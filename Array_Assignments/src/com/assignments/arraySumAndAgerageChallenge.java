@@ -10,7 +10,9 @@ public class arraySumAndAgerageChallenge {
 				           { 85.9, 78, 90, 75, 97, 67, 80, 70, 60, 89 },
 			               { 85.9, 78, 90, 79, 97, 67, 80, 70, 57, 89 }, 
 			               };
-		 
+	//	double marks[i][j] - i is between 0 to 5;
+   //		double marks[i][j] - j is between 0 to 10;
+		
 		
 		for (int i=0; i<marks.length; i++) {
 		
