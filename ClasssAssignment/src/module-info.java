@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author judi
- *
- */
-module ClasssAssignment {
-}

@@ -1,3 +1,0 @@
-Hello, TEAM.
-FROM HOTFIX BRANCH;
-Hello
