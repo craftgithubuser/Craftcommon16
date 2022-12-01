@@ -1,2 +1,0 @@
-sample text
-I added more test to this file on October 22, 2022
