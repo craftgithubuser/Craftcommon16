@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author gebre
- *
- */
-module JavaSamplePorject {
-}

@@ -1,2 +1,0 @@
-increase price by 10%
-tax rate=20%

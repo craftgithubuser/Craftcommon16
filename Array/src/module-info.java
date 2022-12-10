@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author bemit
+ *
+ */
+module Array {
+}

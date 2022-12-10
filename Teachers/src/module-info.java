@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author USER
- *
- */
-module Teachers {
-}

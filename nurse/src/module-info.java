@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author erkyh
- *
- */
-module nurse {
-}

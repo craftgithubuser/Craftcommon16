@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author hiwiw
- *
- */
-module HiwotsJavapro {
-}
