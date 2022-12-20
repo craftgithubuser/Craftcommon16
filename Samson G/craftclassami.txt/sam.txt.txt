@@ -1,4 +1,2 @@
-save this instead
-
-git revert commitId =>when you want to go back to the previous status after you push (push level)
-git checkout commitID=>when you want to go back to the previous status after you commit (commit level)
+exercise;
+late but not too late
