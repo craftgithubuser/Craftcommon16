@@ -7,3 +7,7 @@ i make some change inside local git Directory= i crete filetext1.txt,filetext2.t
 i  check th status by using =git status
 I add 1.txt by using=git add . or git add 1.txt
 I commit or push 1.txt to the local git repo by using =git commit -m "initial commit message"
+
+git revert commitId  =>when want to come back after push level
+
+git checkout commitId filename =>at commit level (staging level)
