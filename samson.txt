@@ -11,3 +11,11 @@ I commit or push 1.txt to the local git repo by using =git commit -m "initial co
 git revert commitId  =>when want to come back after push level
 
 git checkout commitId filename =>at commit level (staging level)
+
+git branch => to call branches
+
+git branch name of branch- e.g.feature or develop => to create branch
+
+git checkout branch name -develop/feature/main => to switch back and for between branches
+
+git branch -d branch name=> to delete branch
