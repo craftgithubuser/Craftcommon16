@@ -1,0 +1,3 @@
+This is my note about the new git branch-- melkamu_branch:
+
+My branch corrupted and I recreated it. 

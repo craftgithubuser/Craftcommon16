@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author saron
- *
- */
-module scanner {
-}
