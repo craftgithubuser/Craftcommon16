@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:email="http://www.mulesoft.org/schema/mule/email" xmlns:sockets="http://www.mulesoft.org/schema/mule/sockets"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/sockets http://www.mulesoft.org/schema/mule/sockets/current/mule-sockets.xsd
+http://www.mulesoft.org/schema/mule/email http://www.mulesoft.org/schema/mule/email/current/mule-email.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="bd5e7935-fbd4-4136-a57c-94597042cce8" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<db:config name="Database_Config1" doc:name="Database Config" doc:id="a1fb8176-4118-4b0a-801e-6cb4a459c55b" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="root" database="online_shopping" />
+	</db:config>
+	<db:config name="Database_Config2" doc:name="Database Config" doc:id="dfe7c61a-264d-4088-bf5b-aae40fd34df3" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="root" database="online_shopping" />
+	</db:config>
+	<email:smtp-config name="Email_SMTP" doc:name="Email SMTP" doc:id="72230184-12cf-46ff-bca8-34ad5812c4da" >
+		<email:smtp-connection host="smtp.gmail.com" port="587" user="evanah2022@gmail.com" password="jjohwcongntocdda" >
+			<email:properties >
+				<email:property key="mail.smtp.starttls.enable" value="true" />
+			</email:properties>
+		</email:smtp-connection>
+	</email:smtp-config>
+	<flow name="assignment2Flow" doc:id="3c171242-d044-485d-b2ce-281c5a537bed" >
+		<http:listener doc:name="Listener" doc:id="f4e26f8b-ff33-4ba6-ada7-69277eb2437b" config-ref="HTTP_Listener_config" path="/assignment"/>
+				<set-variable value="#[attributes.queryParams.quantity]" doc:name="Set Variable" doc:id="8ded3c01-26f0-4833-8ba9-e5ccecbd2040" variableName="quantity"/>
+		<flow-ref doc:name="Flow Reference" doc:id="45cb2aaa-a7b9-4c29-b412-fc67f2f3d85e" name="assignment2Sub_Flow1"/>
+		<ee:transform doc:name="Transform Message" doc:id="a8b955fd-f3c9-4182-bc31-e2abb4f9af16" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+						<ee:transform doc:name="Transform Message" doc:id="a7f2b17f-6750-4b36-a311-f07485661f45" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+
+  (vars.quantity as Number) * payload.price as Number]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<flow-ref doc:name="Flow Reference" doc:id="7716b165-6ce2-4983-9e26-dc660198e355" name="updatesub_flow"/>
+		<email:send doc:name="Send" doc:id="c3a171d0-3fc3-4d02-9b41-0f0c50e71cce" config-ref="Email_SMTP" fromAddress="evanah2022@gmail.com" subject="the data is updated ">
+			<email:to-addresses >
+				<email:to-address value="evanah2022@gmail.com" />
+			</email:to-addresses>
+			<email:body contentTransferEncoding="7BIT">
+				<email:content ><![CDATA[#["hell welcome to batch28"]]]></email:content>
+			</email:body>
+		</email:send>
+	</flow>
+	<sub-flow name="assignment2Sub_Flow1" doc:id="f88c747b-1146-4af1-beb4-9a20eb66232a" >
+		<db:select doc:name="Select" doc:id="5d0f3b96-fae5-4090-9f9f-4897b3219bf9" config-ref="Database_Config1">
+			<db:sql ><![CDATA[select * from tb_product  where id = :id]]></db:sql>
+			<db:input-parameters ><![CDATA[#[{
+  id: attributes.queryParams.id
+}]]]></db:input-parameters>
+		</db:select>
+								<ee:transform doc:name="Transform Message" doc:id="e15a8df9-01a7-43c4-880c-d2203f393989">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+payload reduce ($ ++ $$)]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<ee:transform doc:name="Transform Message" doc:id="dfa91437-748a-4eaa-b4b6-fe54b4e879e9" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[payload]]></ee:set-payload>
+			</ee:message>
+			<ee:variables >
+				<ee:set-variable variableName="id" ><![CDATA[payload.id]]></ee:set-variable>
+				<ee:set-variable variableName="product_Name" ><![CDATA[payload.product_Name]]></ee:set-variable>
+				<ee:set-variable variableName="description" ><![CDATA[payload.description]]></ee:set-variable>
+				<ee:set-variable variableName="video_Url" ><![CDATA[payload.video_Url]]></ee:set-variable>
+				<ee:set-variable variableName="category_Id" ><![CDATA[payload.category_Id]]></ee:set-variable>
+				<ee:set-variable variableName="price" ><![CDATA[payload.price]]></ee:set-variable>
+				<ee:set-variable variableName="amount" ><![CDATA[payload.amount]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+	</sub-flow>
+	<sub-flow name="updatesub_flow" doc:id="dce7bb99-97f0-4ea6-bad6-46aac0b2b412" >
+		<ee:transform doc:name="Transform Message" doc:id="afe4f37b-6465-4a8b-b886-32ecfb855cb1" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+			<ee:variables >
+				<ee:set-variable variableName="finalAmount" ><![CDATA[%dw 2.0
+output application/json
+---
+ vars.amount as Number - vars.quantity as Number]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<db:update doc:name="Update" doc:id="1e5bcd65-d100-4521-a10f-91ad0685b2d5" config-ref="Database_Config2">
+			<db:sql ><![CDATA[Update tb_product set amount = :amount where id = :id
+
+
+]]></db:sql>
+			<db:input-parameters ><![CDATA[#[%dw 2.0
+output application/json
+---
+{id: vars.id,
+amount: vars.finalAmount as String
+}]]]></db:input-parameters>
+		</db:update>
+	</sub-flow>
+</mule>
